@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Background Image Example</title>
+<style>
+  body {
+    /* 1. Set the background image and specify its path */
+    background-image: url("bg.jpeg");
+    
+    /* 2. Control image repetition */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+
+    /* 3. Ensure the image covers the entire area */
+    background-size: cover; /* Scales the image to cover the full container */
+
+    /* 4. Center the image within the container */
+    background-position: center;
+
+    /* 5. (Optional) Fix the image in place during scrolling */
+    background-attachment: fixed; 
+
+    /* 6. (Optional) Fallback background color if the image fails to load */
+    background-color: #cccccc; 
+
+    opacity:  0.5;
+  }
+</style>
+</head>
+<body>
+  <h1>Content goes here</h1>
+  <p>This text is over the background image.</p>
+</body>
+</html>
