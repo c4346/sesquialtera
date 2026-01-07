@@ -1,33 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Background Image Example</title>
-<style>
-  body {
-    /* 1. Set the background image and specify its path */
-    background-image: url("bg.jpeg");
-    
-    /* 2. Control image repetition */
-    background-repeat: no-repeat; /* Prevents the image from tiling */
-
-    /* 3. Ensure the image covers the entire area */
-    background-size: cover; /* Scales the image to cover the full container */
-
-    /* 4. Center the image within the container */
-    background-position: center;
-
-    /* 5. (Optional) Fix the image in place during scrolling */
-    background-attachment: fixed; 
-
-    /* 6. (Optional) Fallback background color if the image fails to load */
-    background-color: #cccccc; 
-
-    opacity:  0.5;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sesquialtera</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>Content goes here</h1>
-  <p>This text is over the background image.</p>
+    <div class="container row" style="background-image: url(images/bg.jpeg); object-fit: scale-down;">
+        <marquee scrollamount="20" behavior="alternate">
+            <div class="block" style="width: fit-content;">
+                <center>
+                    <p>SESQUIALTERA.ORG</p>
+                </center>
+            </div>
+        </marquee>
+    </div>
+
+    <div class="container row">
+        <div class="column left" style="background-color:#999 ">
+            <div class="block">
+                <p>block test</p>
+            </div>
+        </div>
+
+        <div class="column middle" style="background-color:#bbb;">
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+            <div class="block">
+                <p>block test</p>
+            </div>
+        </div>
+
+        <div class="column right" style="background-color:#ccc;">
+            <div class="block">
+                <p>block test</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026</p>
+    </footer>
+
+    </div>
 </body>
+
 </html>
