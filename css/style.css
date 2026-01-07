@@ -1,7 +1,15 @@
 body {
-    background-image: url("images/chamber.jpg");
+    position: relative;
     background-color: #00001F;
     color: #ffffff;
+}
+
+body::before {
+    content: "";
+    background-image: url(../images/chamber.jpg);
+    background-size: cover;
+    opacity: .5;
+    z-index: -1;
 }
 
 .container {
@@ -13,8 +21,16 @@ body {
 
 .header {
     width: 100%;
+    height: 200px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 1px;
+    background-image: url(../images/header.png);
+    background-size: contain;
+    background-position: center center;
+    object-fit: scale-down;
+    position: relative;
+    mask-image: linear-gradient(to bottom, black, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
 }
 
 .column {
@@ -24,14 +40,17 @@ body {
 
 .left {
     width: 20%;
+    opacity: .7;
 }
 
 .right {
     width: 15%;
+    opacity: .7;
 }
 
 .middle {
     width: 60%;
+    opacity: .7;
 }
 
 .row:after {
@@ -41,8 +60,9 @@ body {
 }
 
 .block {
-    background-color: midnightblue;
-    margin-top: 10px;
+    background-color: black;
+    margin-top: 1px;
+    margin-bottom: 20px;
     padding: 15px;
     border: 1px solid grey;
     border-radius: 10px;
