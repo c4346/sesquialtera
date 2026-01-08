@@ -1,6 +1,7 @@
 body {
     position: relative;
-    background-color: #00001F;
+    background-color: #070132;
+    background-image: url(../images/stars.jpg);
     color: #ffffff;
 }
 
@@ -29,8 +30,7 @@ body::before {
     background-position: center center;
     object-fit: scale-down;
     position: relative;
-    mask-image: linear-gradient(to bottom, black, transparent);
-    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+    mask-image: linear-gradient(to bottom, #000000, transparent);
 }
 
 .column {
@@ -40,17 +40,17 @@ body::before {
 
 .left {
     width: 20%;
-    opacity: .7;
+    opacity: .9;
 }
 
 .right {
     width: 15%;
-    opacity: .7;
+    opacity: .9;
 }
 
 .middle {
     width: 60%;
-    opacity: .7;
+    opacity: .9;
 }
 
 .row:after {
