@@ -4,69 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sesquialtera</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="header row">
-        <marquee scrollamount="20" behavior="alternate">
+    <header class="main-header">
+        <div class="scrolling-text">
             <h3>SESQUIALTERA.ORG</h3>
-        </marquee>
-    </div>
+        </div>
+    </header>
 
-    <div class="container row">
-        <div class="column left">
-            <div class="block">
-                <center>
-                    <img id="randomProfile" src="" width="300" height="300">
-                    <script src="./js/profile.js"></script>
-                    <br>
-                    <p></p>
-                </center>
+    <main class="container">
+        <aside class="column left">
+            <div class="block profile-block">
+                <img id="randomProfile" src="" alt="Random Profile Image">
+                <script src="./js/profile.js"></script>
             </div>
-            <div class="block">
+            <nav class="block">
                 <p>Index:</p>
                 <ul>
-                    <li>
-                        <a href="index.html"> Home</a>
-                    </li>
-                    <li>
-                        <a href="testing.html"> testing </a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="testing.html">Testing</a></li>
                 </ul>
+            </nav>
+        </aside>
+
+        <section class="column middle">
+            <div class="block" style="text-align: center;">
+                <h1>Welcome to Sesquialtera.org!</h1>
             </div>
-        </div>
 
-        <div class="column middle">
-            <center>
-                <h1> Welcome to Sesquialtera.org!</h1>
-                <div class="block">
-                    <p>
-                        <img src="./images/impulse.png" width="700" height="400" alt="testingAlt">
-                    </p>
-                    <p>
-                        This is my WIP homepage where you can find my projects, photos, interests, cv, and anything else I decide to put here.
-                    </p>
-                    <img src="./images/rainbow.gif">
-                </div>
-
-            </center>
-        </div>
-
-        <div class="column right">
             <div class="block">
-                <p>block test</p>
+                <img src="./images/impulse.png" class="hero-img" alt="Impulse Project Screenshot">
+                <p>
+                    This is my WIP homepage where you can find my projects, photos, interests, cv, and anything else I decide to put here.
+                </p>
             </div>
-        </div>
-    </div>
 
-    <footer>
+        </section>
+
+        <aside class="column right">
+            <div class="block">
+                <p>Block Test</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="main-footer">
         <p>&copy; 2026</p>
+        <img src="./images/construction.png" alt="Under Construction">
     </footer>
-
-    </div>
 </body>
 
 </html>
